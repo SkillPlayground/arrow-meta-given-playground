@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenLocal() { content { includeGroup("io.arrow-kt") } }
         maven(url = "https://oss.sonatype.org/content/repositories/snapshots") {
             content { includeGroup("io.arrow-kt") }
         }
